@@ -73,7 +73,6 @@ async def youtube_dl_call_back(bot, update):
             "--max-filesize", str(Config.TG_MAX_FILE_SIZE),
             "--embed-subs",
             "--hls-prefer-ffmpeg",
-            "--cookies", cookies_file,
             youtube_dl_url,
             "-o", output_path,
             "--no-warnings"
